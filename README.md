@@ -1,0 +1,2 @@
+# mimikkip
+mimikkips bot

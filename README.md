@@ -1,2 +1,2 @@
-# mimikkip
-mimikkips bot
+# Powai
+Discord bot

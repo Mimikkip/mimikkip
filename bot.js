@@ -36,13 +36,13 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'mimikkip')) {
 	
 		 message.channel.send(`Now trying to contact @mimikkip... Please wait`);
+	}
 
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'Help')) {
 	
 		 message.channel.send(`**m.help m.ping m.hello m.xd m.mimikkip`);
-		
 	}
 });
 //Important

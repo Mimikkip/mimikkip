@@ -46,7 +46,8 @@ client.on('message', message => {
 **m.ping** 
 **m.hello**
 **m.xd**
-**m.mimikkip**`);
+**m.mimikkip**
+**m.channel**`);
 	}
 });
 

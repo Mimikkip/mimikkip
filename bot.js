@@ -52,7 +52,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'Channel')) {
+	if (message.content.startsWith(prefix + 'channel')) {
 	
 		 message.channel.send(`https://www.youtube.com/channel/UCCxNC6gwdCUivWQhkmSSh1A?view_as=subscriber`);
 	}

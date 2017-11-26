@@ -40,7 +40,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'Help')) {
+	if (message.content.startsWith(prefix + 'help')) {
 	
 		 message.channel.send(`m.help m.ping m.hello m.xd m.mimikkip`);
 	}

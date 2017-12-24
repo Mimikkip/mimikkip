@@ -47,7 +47,8 @@ client.on('message', message => {
 **m.hello**
 **m.xd**
 **m.mimikkip**
-**m.channel**`);
+**m.channel**
+**m.pol**`);
 	}
 });
 

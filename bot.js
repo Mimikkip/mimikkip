@@ -10,6 +10,22 @@ var prefix = "m."
 
 client.on('message', message => {
 	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'help')) {
+	
+		 message.channel.send(`**m.help**
+**m.ping** 
+**m.hello**
+**m.xd**
+**m.mimikkip**
+**m.channel**
+**m.pol**
+**m.TSG**
+**m.tetsuo**`);
+	}
+});
+
+client.on('message', message => {
+	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
 	
 		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
@@ -38,19 +54,6 @@ client.on('message', message => {
 		 message.channel.send(`Now trying to contact <@285845218639740929> ... Please wait`);
 	}
 });
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'help')) {
-	
-		 message.channel.send(`**m.help**
-**m.ping** 
-**m.hello**
-**m.xd**
-**m.mimikkip**
-**m.channel**
-**m.pol**`);
-	}
-});
 
 client.on('message', message => {
 	if (message.author === client.user) return;
@@ -67,6 +70,23 @@ client.on('message', message => {
 		 message.channel.send(`Hello my life is sad! :wave:`);
 	}
 });
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'TSG')) {
+	
+		 message.channel.send(`konichiwa orewa TSC. or the lone element`);
+	}
+});
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'tetsuo')) {
+	
+		 message.channel.send(`Ohayo, Tetsuo-kun!`);
+	}
+});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 

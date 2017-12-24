@@ -35,7 +35,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'mimikkip')) {
 	
-		 message.channel.send(`Now trying to contact @Mimikkip#4112 ... Please wait`);
+		 message.channel.send(`Now trying to contact <@285845218639740929> ... Please wait`);
 	}
 });
 client.on('message', message => {

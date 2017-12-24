@@ -58,6 +58,14 @@ client.on('message', message => {
 		 message.channel.send(`https://www.youtube.com/channel/UCCxNC6gwdCUivWQhkmSSh1A?view_as=subscriber`);
 	}
 });
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'pol')) {
+	
+		 message.channel.send(`Hello my life is sad! :wave:`);
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 

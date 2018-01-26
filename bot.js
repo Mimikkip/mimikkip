@@ -87,6 +87,14 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'zenium')) {
+	
+		 message.channel.send(`AY, ZENIUM WHERE YOU AT?`);
+	}
+});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 

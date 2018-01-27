@@ -12,7 +12,8 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
 	
-		 message.channel.send(`**m.help**
+		 message.channel.send(`
+**m.help**
 **m.ping** 
 **m.hello**
 **m.xd**
@@ -20,7 +21,10 @@ client.on('message', message => {
 **m.channel**
 **m.pol**
 **m.TSG**
-**m.tetsuo**`);
+**m.tetsuo**
+**m.zenium**
+
+`);
 	}
 });
 

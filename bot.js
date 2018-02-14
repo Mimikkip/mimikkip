@@ -22,7 +22,7 @@ client.on('message', message => {
 **m.pol**
 **m.TSG**
 **m.tetsuo**
-**m.zenium**
+**m.alex**
 
 `);
 	}
@@ -93,9 +93,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'zenium')) {
+	if (message.content.startsWith(prefix + 'alex')) {
 	
-		 message.channel.send(`AY, ZENIUM WHERE YOU AT?`);
+		 message.channel.send(`No homo`);
 	}
 });
 

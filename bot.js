@@ -18,6 +18,7 @@ client.on('message', message => {
 **l.prefix**
 **l.summon**
 **l.castle**
+**l.5star**
 
 `);
 	}
@@ -55,6 +56,17 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + '5star')) {
+	
+		 message.channel.send(`"I'd like to offer my thanks today. It's for all the times you've helped me. Nothing more, nothing less.
+But while I'm at it, I should also thank you for giving me courage and never failing to be kind.
+Those are rarer qualities than you'd think. In fact...
+I think you're as precious to me as the breeze that blows across the open plains of Sacae.
+Oh my! Pay me no mind. But, please, know that I'm always here for you, all right?"`);
+	}
+});
 
 //Important
 client.login(process.env.BOT_TOKEN);

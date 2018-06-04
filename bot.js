@@ -68,18 +68,6 @@ Oh my! Pay me no mind. But, please, know that I'm always here for you, all right
 	}
 });
 
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'random')) {
-
-		while not client.is_closed:
-    channel = client.get_channel("360701697963851776")
-    messages = ["Message 1", "Message 2", "Message 3"]
-    await client.send_message(channel, random.choice(messages))
-    await asyncio.sleep(21600)
-	}
-});
-
 //Important
 client.login(process.env.BOT_TOKEN);
 

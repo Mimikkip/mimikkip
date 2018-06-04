@@ -19,10 +19,7 @@ client.on('message', message => {
 **m.xd**
 **m.mimikkip**
 **m.channel**
-**m.pol**
-**m.TSG**
 **m.tetsuo**
-**m.alex**
 
 `);
 	}
@@ -69,33 +66,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'pol')) {
-	
-		 message.channel.send(`Hello my life is sad! :wave:`);
-	}
-});
-
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'TSG')) {
-	
-		 message.channel.send(`konichiwa orewa TSC. or the lone element`);
-	}
-});
-
-client.on('message', message => {
-	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'tetsuo')) {
 	
 		 message.channel.send(`Ohayo, Tetsuo-kun!`);
-	}
-});
-
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'alex')) {
-	
-		 message.channel.send(`No homo`);
 	}
 });
 

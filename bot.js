@@ -38,6 +38,15 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'summon')) {
+	
+		 message.channel.send(`"I'm Lyndis of the House of Caelin. Yet I truly belong to the open plains. Just call me Lyn, all right?"`);
+	}
+});
+
+
 //Important
 client.login(process.env.BOT_TOKEN);
 

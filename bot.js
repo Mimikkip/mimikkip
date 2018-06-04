@@ -52,7 +52,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'castle')) {
 	
-		 message.channel.send(`"I love the feel of the wind. It's always a balm for whatever's bothering me.""`);
+		 message.channel.send(`"I love the feel of the wind. It's always a balm for whatever's bothering me."`);
 	}
 });
 
@@ -65,6 +65,15 @@ But while I'm at it, I should also thank you for giving me courage and never fai
 Those are rarer qualities than you'd think. In fact...
 I think you're as precious to me as the breeze that blows across the open plains of Sacae.
 Oh my! Pay me no mind. But, please, know that I'm always here for you, all right?"`);
+	}
+});
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'random')) {
+	
+		message.channel.send = ["Message 1", "Message 2", "Message 3"]
+    await client.send_message(channel, random.choice(messages))
 	}
 });
 

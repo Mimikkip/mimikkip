@@ -13,6 +13,7 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'help')) {
 	
 		 message.channel.send(`
+"Orders?"
 **l.help**
 **l.prefix**
 **l.summon**
@@ -43,6 +44,14 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'summon')) {
 	
 		 message.channel.send(`"I'm Lyndis of the House of Caelin. Yet I truly belong to the open plains. Just call me Lyn, all right?"`);
+	}
+});
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'castle')) {
+	
+		 message.channel.send(`"I love the feel of the wind. It's always a balm for whatever's bothering me.""`);
 	}
 });
 

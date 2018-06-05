@@ -26,9 +26,9 @@ client.on('message', message => {
 //Copy and paste from here to add a command, replace mimikkip with ur command and here goes ur reply to wut bot is going to say
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'ping')) {
+	if (message.content.startsWith(prefix + 'Mimikkip')) {
 	
-		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
+		 message.channel.send(`Mimikkip`);
 	}
 });
 
@@ -50,14 +50,6 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'castle')) {
-	
-		 message.channel.send(`"I love the feel of the wind. It's always a balm for whatever's bothering me."`);
-	}
-});
-
-client.on('message', message => {
-	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + '5star')) {
 	
 		 message.channel.send(`"I'd like to offer my thanks today. It's for all the times you've helped me. Nothing more, nothing less.
@@ -68,18 +60,35 @@ Oh my! Pay me no mind. But, please, know that I'm always here for you, all right
 	}
 });
 
+//Random message answers
 var randomfacts = [
  "Example 1",
   "Example 2",
   "Example 3",	
   "Example 4",
 ]
-
+//Random message code
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'random')) {
 		var randomfactAnswer = randomfacts[Math.floor(Math.random() * randomfacts.length)];
 		message.channel.send(randomfactAnswer);
+		}
+});
+
+var castlequote = [
+ ""I love the feel of the wind. It's always a balm for whatever's bothering me."",
+  ""Wielding a sword is useful for more than battle. I find that it also gives me a peek into another person's thoughts.
+So, I think I might know what's on your mind, friend!"",
+  "Example 3",	
+  "Example 4",
+]
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'castle')) {
+		var castleAnswer = castlequote[Math.floor(Math.random() * castlequote.length)];
+		message.channel.send(castleAnswer);
 		}
 });
 

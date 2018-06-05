@@ -78,9 +78,10 @@ client.on('message', message => {
 
 var castlequote = [
  "I love the feel of the wind. It's always a balm for whatever's bothering me.",
-  "Wielding a sword is useful for more than battle. I find that it also gives me a peek into another person's thoughts. So, I think I might know what's on your mind, friend!",
-  "Example 3",	
-  "Example 4",
+ "Wielding a sword is useful for more than battle. I find that it also gives me a peek into another person's thoughts. So, I think I might know what's on your mind, friend!",
+ "Good job out there. You be sure to stay well rested. You carry the heaviest load of all of us.",	
+ "We should find a hill and look out across the world. People really don't do that nearly enough.",
+"I may look calm—maybe even still. But I'm really very focused. It's part of my daily training with my sword.",
 ]
 
 client.on('message', message => {

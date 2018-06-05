@@ -60,6 +60,14 @@ Oh my! Pay me no mind. But, please, know that I'm always here for you, all right
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + '5star')) {
+	
+		 message.channel.send(`Potato :)`);
+	}
+});
+
 //Random message answers
 var randomfacts = [
  "Example 1",

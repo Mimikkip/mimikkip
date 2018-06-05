@@ -68,6 +68,21 @@ Oh my! Pay me no mind. But, please, know that I'm always here for you, all right
 	}
 });
 
+var randomfacts = [
+ "Example 1",
+  "Example 2",
+  "Example 3",	
+  "Example 4",
+]
+
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'random')) {
+		var randomfactAnswer = randomfacts[Math.floor(Math.random() * randomfacts.length)];
+		message.channel.send(randomfactAnswer);
+		}
+});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 

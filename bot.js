@@ -68,6 +68,14 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'chrom?')) {
+	
+		 message.channel.send(`Chrom dead lol`);
+	}
+});
+
 //Random message answers
 var randomfacts = [
  "Example 1",

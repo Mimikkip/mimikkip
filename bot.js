@@ -76,6 +76,14 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'morning')) {
+	
+		 message.channel.send(`Mimi is sad for working on a bot named after a fictional character with mildly large anime b00bs`);
+	}
+});
+
 //Random message answers
 var randomfacts = [
  "Example 1",

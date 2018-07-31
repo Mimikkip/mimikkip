@@ -16,7 +16,7 @@ client.on('message', message => {
 
         const embed = new Discord.RichEmbed()
   .setTitle("Your Title")
-  .setAuthor("Your Authorr", "Author Icon Imge link")
+  .setAuthor("Your Authorr")
   .setColor(0x7401DF)
   .setDescription("Ur Description")
  .setImage("UrImage")
@@ -25,10 +25,10 @@ client.on('message', message => {
     }
 });
 
-//Lyn
+//Test
 client.on('message', message => {
     if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'Test')) {
+    if (message.content.startsWith(prefix + 'test')) {
 
         const embed = new Discord.RichEmbed()
   .setTitle("Lyn")
@@ -36,6 +36,23 @@ client.on('message', message => {
   .setColor(0x7401DF)
   .setDescription("This is a Lyn")
  .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv")
+
+  message.channel.send({embed});
+    }
+});
+
+//
+client.on('message', message => {
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'yourcomand')) {
+
+        const embed = new Discord.RichEmbed()
+  .setTitle("Lyn")
+  .setAuthor("Written by Mimi")
+  .setColor(0x7401DF)
+  .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv")
+  .setDescription("Weapon: Sword")
+  .setDescription("Movement Type: Infantry")
 
   message.channel.send({embed});
     }

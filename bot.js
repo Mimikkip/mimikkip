@@ -32,7 +32,7 @@ client.on('message', message => {
 
         const embed = new Discord.RichEmbed()
   .setTitle("Lyn")
-  .setAuthor("Mimikkip", "Author Icon Imge link")
+  .setAuthor("Mimikkip")
   .setColor(0x7401DF)
   .setDescription("This is a Lyn")
  .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv")

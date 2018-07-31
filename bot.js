@@ -28,7 +28,7 @@ client.on('message', message => {
 //Lyn
 client.on('message', message => {
     if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'Lyn')) {
+    if (message.content.startsWith(prefix + 'Test')) {
 
         const embed = new Discord.RichEmbed()
   .setTitle("Lyn")

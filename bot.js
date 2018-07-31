@@ -35,7 +35,7 @@ client.on('message', message => {
   .setAuthor("Mimikkip")
   .setColor(0x7401DF)
   .setDescription("This is a Lyn")
- .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/2017-01/Lyn.png")
+ .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv")
 
   message.channel.send({embed});
     }

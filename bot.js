@@ -41,10 +41,10 @@ client.on('message', message => {
     }
 });
 
-//
+//Lyn
 client.on('message', message => {
     if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'yourcomand')) {
+    if (message.content.startsWith(prefix + 'lyn')) {
 
         const embed = new Discord.RichEmbed()
   .setTitle("Lyn")

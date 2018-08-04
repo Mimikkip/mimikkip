@@ -41,6 +41,10 @@ client.on('message', message => {
     }
 });
 
+bot.on('message' message => {
+    message.channel.send("This is a lyn", {files: ["https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv"]});
+});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 

@@ -41,14 +41,6 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
-    if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'test2')) {
-bot.on('message' message => {
-    message.channel.send("This is a lyn", {files: ["https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv"]});
-    }
-});
-
 //Important
 client.login(process.env.BOT_TOKEN);
 

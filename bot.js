@@ -41,22 +41,6 @@ client.on('message', message => {
     }
 });
 
-//Lyn
-client.on('message', message => {
-    if (message.author === client.user) return;
-    if (message.content.startsWith(prefix + 'lyn')) {
-
-        const embed = new Discord.RichEmbed()
-  .setTitle("Lyn")
-  .setAuthor("Written by Mimi")
-  .setColor(0x7401DF)
-  .setImage("https://fireemblem.gamepress.gg/sites/fireemblem/files/styles/300h/public/2017-01/Lyn.png?itok=bHnVdWJv")
-  .setDescription("Weapon: Sword" "Movement Type: Infantry")
-
-  message.channel.send({embed});
-    }
-});
-
 //Important
 client.login(process.env.BOT_TOKEN);
 

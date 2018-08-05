@@ -25,6 +25,21 @@ client.on('message', message => {
     }
 });
 
+//UpdateLogs
+client.on('message', message => {
+    if (message.author === client.user) return;
+    if (message.content.startsWith(prefix + 'updatelog')) {
+
+        const embed = new Discord.RichEmbed()
+  .setTitle("Update Logs")
+  .setColor(0x7401DF)
+  .setDescription("1.0 - Creation, 1.01 - added test command")
+
+
+  message.channel.send({embed});
+    }
+});
+
 //Test
 client.on('message', message => {
     if (message.author === client.user) return;
